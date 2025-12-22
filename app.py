@@ -1,4 +1,3 @@
-# app.py
 def main():
     print("Hello, Docker és Debian!")
     print("A konténer sikeresen fut a Debian alapú környezetben.")
