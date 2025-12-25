@@ -92,12 +92,29 @@ Futtassuk a Docker konténert:
  A könyvtárra állítsuk be a Git-et: 
  
     $ git init
- 
+    Initialized empty Git repository in /home/bagozoltan/debian-python-app/.git/
+
+Ellenőrizzük a fájlok állapotát (status): 
+    
+	$ git status
+    On branch main
+
+    No commits yet
+
+    Untracked files:
+      (use "git add <file>..." to include in what will be committed)
+	    Dockerfile
+	    LICENSE.md
+	    README.md
+	    app.py
+
+    nothing added to commit but untracked files present (use "git add" to track)
+	
 Adjuk hozzá az összes (all) fájlt:
 
-    git add --all
+    $ git add --all
 
-Ellenőrizzük a fájlok állapotát (status):
+Ellenőrizzük a fájlok állapotát:
 
     $ git status
     
@@ -108,6 +125,7 @@ Ellenőrizzük a fájlok állapotát (status):
     Changes to be committed:
       (use "git rm --cached <file>..." to unstage)
 	    new file:   Dockerfile
+	    new file:   LICENSE.md
 	    new file:   README.md
 	    new file:   app.py
 
@@ -115,11 +133,12 @@ Hozzuk létre az első commitunkat:
 
     $ git commit -m "first commit"
 
-    [main (root-commit) 0510c7a] first commit
-     3 files changed, 126 insertions(+)
-     create mode 100644 Dockerfile
-     create mode 100644 README.md
-     create mode 100644 app.py
+    [main (root-commit) 426f65a] first commit
+    4 files changed, 194 insertions(+)
+    create mode 100644 Dockerfile
+    create mode 100644 LICENSE.md
+    create mode 100644 README.md
+    create mode 100644 app.py
 
 Nevezzük át az aktuális ágat:
 
@@ -134,14 +153,14 @@ Töltsük fel a GitHub repository-ba:
     $ git push -u origin main
 
     Enter passphrase for key '/home/bagozoltan/.ssh/id_ed25519': 
-    Enumerating objects: 5, done.
-    Counting objects: 100% (5/5), done.
+    Enumerating objects: 7, done.
+    Counting objects: 100% (7/7), done.
     Delta compression using up to 2 threads
-    Compressing objects: 100% (5/5), done.
-    Writing objects: 100% (5/5), 1.72 KiB | 251.00 KiB/s, done.
-    Total 5 (delta 0), reused 0 (delta 0), pack-reused 0
+    Compressing objects: 100% (6/6), done.
+    Writing objects: 100% (6/6), 3.18 KiB | 465.00 KiB/s, done.
+    Total 6 (delta 0), reused 0 (delta 0), pack-reused 0
     To github.com:ZoltanBago/debian-python-app.git
-     * [new branch]      main -> main
+       220ab95..67e663f  main -> main
     branch 'main' set up to track 'origin/main' by rebasing.
 
 ## Licenc
