@@ -1,4 +1,5 @@
 # Debian Python alkalmazás futtatása a Docker segítségével 
+**A projekt lényege**: Létre hozunk egy Python és egy Docker fájlt, majd felépítjük a Debian alapú konténert és végül futtatjuk a terminálban a Python alkalmazást.
 
 Hozzunk létre egy könyvtárat a Linux terminál segítségével és egyúttal lépjünk be:
 
@@ -88,7 +89,47 @@ Futtassuk a Docker konténert:
     debian-python-app$ docker run debian-python-app
     Hello, Docker és Debian!
     A konténer sikeresen fut a Debian alapú környezetben.
- 
+  
+    $ git init
+    
+    $ git add --all
+    
+    $ git status
+    
+    On branch main
+
+    No commits yet
+
+    Changes to be committed:
+      (use "git rm --cached <file>..." to unstage)
+	    new file:   Dockerfile
+	    new file:   README.md
+	    new file:   app.py
+
+    $ git commit -m "first commit"
+
+    [main (root-commit) 0510c7a] first commit
+     3 files changed, 126 insertions(+)
+     create mode 100644 Dockerfile
+     create mode 100644 README.md
+     create mode 100644 app.py
+
+    $ git branch -M main
+
+    $ git remote add origin git@github.com:ZoltanBago/debian-python-app.git
+    
+    $ git push -u origin main
+
+    Enter passphrase for key '/home/bagozoltan/.ssh/id_ed25519': 
+    Enumerating objects: 5, done.
+    Counting objects: 100% (5/5), done.
+    Delta compression using up to 2 threads
+    Compressing objects: 100% (5/5), done.
+    Writing objects: 100% (5/5), 1.72 KiB | 251.00 KiB/s, done.
+    Total 5 (delta 0), reused 0 (delta 0), pack-reused 0
+    To github.com:ZoltanBago/debian-python-app.git
+     * [new branch]      main -> main
+    branch 'main' set up to track 'origin/main' by rebasing.
 
 
 
