@@ -52,11 +52,14 @@ Ez a parancs fut le, amikor a konténer elindul.
 Listázzuk ki a könyvtár tartalmát:
  
     debian-python-app$ ls
-    app.py  Dockerfile
+    
+A kimenet:
+	
+	app.py  Dockerfile
 
 Építsük fel a Docker konténert a **build** parancs segítségével:
  
-    debian-python-app$ docker build -t debian-python-app .
+    $ docker build -t debian-python-app .
 
 A folyamat lépései a terminálban:
  
@@ -85,7 +88,7 @@ A folyamat lépései a terminálban:
     
 Futtassuk a Docker konténert: 
 
-    debian-python-app$ docker run debian-python-app
+    $ docker run debian-python-app
 
 A kimenet:
 
@@ -95,7 +98,10 @@ A kimenet:
  A könyvtárra állítsuk be a Git-et: 
  
     $ git init
-    Initialized empty Git repository in /home/bagozoltan/debian-python-app/.git/
+
+A kimenet:   
+	
+	Initialized empty Git repository in /home/bagozoltan/debian-python-app/.git/
 
 Ellenőrizzük a fájlok állapotát (status):
 
