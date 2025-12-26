@@ -86,13 +86,22 @@ A folyamat lépései a terminálban:
 Futtassuk a Docker konténert: 
 
     debian-python-app$ docker run debian-python-app
-    Hello, Docker és Debian!
+
+A kimenet:
+
+	Hello, Docker és Debian!
     A konténer sikeresen fut a Debian alapú környezetben.
  
  A könyvtárra állítsuk be a Git-et: 
  
     $ git init
     Initialized empty Git repository in /home/bagozoltan/debian-python-app/.git/
+
+Ellenőrizzük a fájlok állapotát (status):
+
+	$ git status
+
+A kimenet:
 
 	On branch main
 
@@ -113,10 +122,12 @@ Adjuk hozzá az összes (all) fájlt:
 
     $ git add --all
 
-Ellenőrizzük a fájlok állapotát (status):
+Ellenőrizzük a fájlok állapotát:
 
     $ git status
-    
+
+A kimenet:
+	
     On branch main
 
     No commits yet
@@ -133,6 +144,8 @@ Ellenőrizzük a fájlok állapotát (status):
 Hozzuk létre az első commitunkat:
 
     $ git commit -m "first commit"
+
+A kimenet:
 
     [main (root-commit) 2a31787] first commit
     6 files changed, 246 insertions(+)
@@ -154,6 +167,8 @@ Nevezzük át az aktuális ágat:
 Töltsük fel a GitHub repository-ba:
 
     $ git push -u origin main
+
+A kimenet:
 
     Enter passphrase for key '/home/bagozoltan/.ssh/id_ed25519': 
     Enumerating objects: 9, done.
